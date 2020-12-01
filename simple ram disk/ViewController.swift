@@ -8,7 +8,12 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    
+    
+    @IBOutlet weak var sizeInput: NSTextField!
+    
+    @IBOutlet weak var sizeTypeBox: NSComboBox!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +25,45 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
+    
+    @IBAction func createDisk(_ sender: Any) {
+        let diskSpace = self.calculateDiskSpace(self.sizeInput.intValue ?? 1, self.sizeTypeBox.stringValue ?? "MB");
+        print(diskSpace);
+        
+        let result = self.shell("diskutil erasevolume HFS+ 'RAM_Disk_512MB' `hdiutil attach -nomount ram://\(diskSpace)`");
+        print(result);
+    }
+    
+    private func calculateDiskSpace(_ size: Int32!, _ type: String!) -> Int32 {
+        
+        if type == "B" {
+            return (size / 1024) * 2048;
+        } else if type == "GB" {
+            return (size * 1024) * 2048;
+        }
+        
+        return size * 2048;
+    }
+    
+    private func shell(_ args: String!) -> String {
+        var outstr = ""
+        
+        let task = Process()
+        task.launchPath = "/bin/sh"
+        task.arguments = ["-c", args]
+        
+        let pipe = Pipe()
+        task.standardOutput = pipe
+        task.launch()
+        
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        if let output = String(data: data, encoding: .utf8) {
+            outstr = output as String
+        }
+        
+        task.waitUntilExit()
+        
+        return outstr
+    }
 }
 
