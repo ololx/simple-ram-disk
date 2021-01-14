@@ -9,7 +9,6 @@ import Cocoa
 
 class ViewController: NSViewController {
     
-    
     @IBOutlet weak var sizeInput: NSTextField!
     
     @IBOutlet weak var sizeTypeBox: NSComboBox!
@@ -30,7 +29,7 @@ class ViewController: NSViewController {
         let diskSpace = self.calculateDiskSpace(self.sizeInput.intValue ?? 1, self.sizeTypeBox.stringValue ?? "MB");
         print(diskSpace);
         
-        let result = self.shell("diskutil erasevolume HFS+ 'RAM_Disk_512MB' `hdiutil attach -nomount ram://\(diskSpace)`");
+        let result = self.shell("diskutil erasevolume JHFS+ 'RAM_Disk_512MB' `hdiutil attach -nomount ram://\(diskSpace)`");
         print(result);
     }
     
@@ -49,8 +48,10 @@ class ViewController: NSViewController {
         var outstr = ""
         
         let task = Process()
-        task.launchPath = "/bin/sh"
-        task.arguments = ["-c", args]
+        task.launchPath = "/usr/sbin/diskutil"
+        task.arguments = [args ?? "echo fuck"]
+        
+        print(task.arguments);
         
         let pipe = Pipe()
         task.standardOutput = pipe
@@ -65,5 +66,16 @@ class ViewController: NSViewController {
         
         return outstr
     }
+    
+    @discardableResult
+    func shell2(_ args: String...) -> Int32 {
+        let task = Process()
+        task.launchPath = "/usr/bin/env"
+        task.arguments = args
+        task.launch()
+        task.waitUntilExit()
+        return task.terminationStatus
+    }
+
 }
 

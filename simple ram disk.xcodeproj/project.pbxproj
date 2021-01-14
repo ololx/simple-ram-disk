@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A3A38CB22573F892005AFA43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB12573F892005AFA43 /* AppDelegate.swift */; };
-		A3A38CB42573F892005AFA43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB32573F892005AFA43 /* ViewController.swift */; };
+		A3A38CB42573F892005AFA43 /* CreateRamDiskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB32573F892005AFA43 /* CreateRamDiskViewController.swift */; };
 		A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB52573F892005AFA43 /* simple_ram_disk.xcdatamodeld */; };
 		A3A38CB92573F893005AFA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A38CB82573F893005AFA43 /* Assets.xcassets */; };
 		A3A38CBC2573F893005AFA43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A38CBA2573F893005AFA43 /* Main.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		A3A38CAE2573F892005AFA43 /* simple ram disk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple ram disk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A38CB12573F892005AFA43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3A38CB32573F892005AFA43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3A38CB32573F892005AFA43 /* CreateRamDiskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRamDiskViewController.swift; sourceTree = "<group>"; };
 		A3A38CB62573F892005AFA43 /* simple_ram_disk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = simple_ram_disk.xcdatamodel; sourceTree = "<group>"; };
 		A3A38CB82573F893005AFA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3A38CBB2573F893005AFA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,15 +55,23 @@
 		A3A38CB02573F892005AFA43 /* simple ram disk */ = {
 			isa = PBXGroup;
 			children = (
+				A3E38E2725B05DE40009EC7E /* view */,
 				A3A38CB12573F892005AFA43 /* AppDelegate.swift */,
-				A3A38CB32573F892005AFA43 /* ViewController.swift */,
 				A3A38CB82573F893005AFA43 /* Assets.xcassets */,
-				A3A38CBA2573F893005AFA43 /* Main.storyboard */,
 				A3A38CBD2573F893005AFA43 /* Info.plist */,
 				A3A38CBE2573F893005AFA43 /* simple_ram_disk.entitlements */,
 				A3A38CB52573F892005AFA43 /* simple_ram_disk.xcdatamodeld */,
 			);
 			path = "simple ram disk";
+			sourceTree = "<group>";
+		};
+		A3E38E2725B05DE40009EC7E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A3A38CBA2573F893005AFA43 /* Main.storyboard */,
+				A3A38CB32573F892005AFA43 /* CreateRamDiskViewController.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3A38CB42573F892005AFA43 /* ViewController.swift in Sources */,
+				A3A38CB42573F892005AFA43 /* CreateRamDiskViewController.swift in Sources */,
 				A3A38CB22573F892005AFA43 /* AppDelegate.swift in Sources */,
 				A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */,
 			);
