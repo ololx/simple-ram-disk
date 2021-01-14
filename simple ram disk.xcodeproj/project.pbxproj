@@ -55,8 +55,8 @@
 		A3A38CB02573F892005AFA43 /* simple ram disk */ = {
 			isa = PBXGroup;
 			children = (
+				A3E38E2A25B073640009EC7E /* route */,
 				A3E38E2725B05DE40009EC7E /* view */,
-				A3A38CB12573F892005AFA43 /* AppDelegate.swift */,
 				A3A38CB82573F893005AFA43 /* Assets.xcassets */,
 				A3A38CBD2573F893005AFA43 /* Info.plist */,
 				A3A38CBE2573F893005AFA43 /* simple_ram_disk.entitlements */,
@@ -72,6 +72,14 @@
 				A3A38CB32573F892005AFA43 /* CreateRamDiskViewController.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		A3E38E2A25B073640009EC7E /* route */ = {
+			isa = PBXGroup;
+			children = (
+				A3A38CB12573F892005AFA43 /* AppDelegate.swift */,
+			);
+			path = route;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
