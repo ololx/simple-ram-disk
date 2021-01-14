@@ -12,6 +12,7 @@
 		A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB52573F892005AFA43 /* simple_ram_disk.xcdatamodeld */; };
 		A3A38CB92573F893005AFA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A38CB82573F893005AFA43 /* Assets.xcassets */; };
 		A3A38CBC2573F893005AFA43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A38CBA2573F893005AFA43 /* Main.storyboard */; };
+		A3E38E2D25B074340009EC7E /* VolumeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E38E2C25B074340009EC7E /* VolumeDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		A3A38CBB2573F893005AFA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3A38CBD2573F893005AFA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3A38CBE2573F893005AFA43 /* simple_ram_disk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = simple_ram_disk.entitlements; sourceTree = "<group>"; };
+		A3E38E2C25B074340009EC7E /* VolumeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		A3E38E2B25B073CD0009EC7E /* entity */ = {
 			isa = PBXGroup;
 			children = (
+				A3E38E2C25B074340009EC7E /* VolumeDetail.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E38E2D25B074340009EC7E /* VolumeDetail.swift in Sources */,
 				A3A38CB42573F892005AFA43 /* CreateRamDiskViewController.swift in Sources */,
 				A3A38CB22573F892005AFA43 /* AppDelegate.swift in Sources */,
 				A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */,
