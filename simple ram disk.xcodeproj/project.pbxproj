@@ -55,6 +55,7 @@
 		A3A38CB02573F892005AFA43 /* simple ram disk */ = {
 			isa = PBXGroup;
 			children = (
+				A3E38E2B25B073CD0009EC7E /* entity */,
 				A3E38E2A25B073640009EC7E /* route */,
 				A3E38E2725B05DE40009EC7E /* view */,
 				A3A38CB82573F893005AFA43 /* Assets.xcassets */,
@@ -80,6 +81,13 @@
 				A3A38CB12573F892005AFA43 /* AppDelegate.swift */,
 			);
 			path = route;
+			sourceTree = "<group>";
+		};
+		A3E38E2B25B073CD0009EC7E /* entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
