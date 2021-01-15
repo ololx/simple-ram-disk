@@ -8,7 +8,7 @@
 public struct VolumeDetail {
     
     public static func of(name: String!, size: Int64!) -> VolumeDetail {
-        return VolumeDetail.init(name: name, size: size);
+        return VolumeDetail.init(name, size);
     }
     
     //
@@ -21,7 +21,7 @@ public struct VolumeDetail {
     //
     private var size: Int64!
     
-    public init(name: String!, size: Int64!) {
+    public init(_ name: String!, _ size: Int64!) {
         self.name = name;
         self.size = size;
     }

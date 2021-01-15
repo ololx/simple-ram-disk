@@ -12,6 +12,8 @@
 		A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB52573F892005AFA43 /* simple_ram_disk.xcdatamodeld */; };
 		A3A38CB92573F893005AFA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A38CB82573F893005AFA43 /* Assets.xcassets */; };
 		A3A38CBC2573F893005AFA43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A38CBA2573F893005AFA43 /* Main.storyboard */; };
+		A3AC4B0625B1A8F3009CA485 /* ShellScriptProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC4B0525B1A8F3009CA485 /* ShellScriptProtocol.swift */; };
+		A3AC4B0925B1FCBD009CA485 /* ShellScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC4B0825B1FCBD009CA485 /* ShellScript.swift */; };
 		A3E38E2D25B074340009EC7E /* VolumeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E38E2C25B074340009EC7E /* VolumeDetail.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		A3A38CBB2573F893005AFA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3A38CBD2573F893005AFA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3A38CBE2573F893005AFA43 /* simple_ram_disk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = simple_ram_disk.entitlements; sourceTree = "<group>"; };
+		A3AC4B0525B1A8F3009CA485 /* ShellScriptProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellScriptProtocol.swift; sourceTree = "<group>"; };
+		A3AC4B0825B1FCBD009CA485 /* ShellScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellScript.swift; sourceTree = "<group>"; };
 		A3E38E2C25B074340009EC7E /* VolumeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +45,7 @@
 		A3A38CA52573F892005AFA43 = {
 			isa = PBXGroup;
 			children = (
+				A3AC4B0325B1A8BA009CA485 /* commons */,
 				A3A38CB02573F892005AFA43 /* simple ram disk */,
 				A3A38CAF2573F892005AFA43 /* Products */,
 			);
@@ -57,6 +62,7 @@
 		A3A38CB02573F892005AFA43 /* simple ram disk */ = {
 			isa = PBXGroup;
 			children = (
+				A3AC4B0225B1A898009CA485 /* interactor */,
 				A3E38E2B25B073CD0009EC7E /* entity */,
 				A3E38E2A25B073640009EC7E /* route */,
 				A3E38E2725B05DE40009EC7E /* view */,
@@ -66,6 +72,30 @@
 				A3A38CB52573F892005AFA43 /* simple_ram_disk.xcdatamodeld */,
 			);
 			path = "simple ram disk";
+			sourceTree = "<group>";
+		};
+		A3AC4B0225B1A898009CA485 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		A3AC4B0325B1A8BA009CA485 /* commons */ = {
+			isa = PBXGroup;
+			children = (
+				A3AC4B0425B1A8CC009CA485 /* utils */,
+			);
+			path = commons;
+			sourceTree = "<group>";
+		};
+		A3AC4B0425B1A8CC009CA485 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A3AC4B0525B1A8F3009CA485 /* ShellScriptProtocol.swift */,
+				A3AC4B0825B1FCBD009CA485 /* ShellScript.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		A3E38E2725B05DE40009EC7E /* view */ = {
@@ -165,7 +195,9 @@
 				A3E38E2D25B074340009EC7E /* VolumeDetail.swift in Sources */,
 				A3A38CB42573F892005AFA43 /* CreateRamDiskViewController.swift in Sources */,
 				A3A38CB22573F892005AFA43 /* AppDelegate.swift in Sources */,
+				A3AC4B0625B1A8F3009CA485 /* ShellScriptProtocol.swift in Sources */,
 				A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */,
+				A3AC4B0925B1FCBD009CA485 /* ShellScript.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
