@@ -7,6 +7,10 @@
 
 public struct VolumeDetail {
     
+    public static func of(name: String!, size: Int64!) -> VolumeDetail {
+        return VolumeDetail.init(name: name, size: size);
+    }
+    
     //
     // The volume name for file system
     //
@@ -16,4 +20,9 @@ public struct VolumeDetail {
     // The volume size in messure
     //
     private var size: Int64!
+    
+    public init(name: String!, size: Int64!) {
+        self.name = name;
+        self.size = size;
+    }
 }
