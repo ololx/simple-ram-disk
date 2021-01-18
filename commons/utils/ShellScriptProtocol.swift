@@ -5,11 +5,11 @@
 //  Created by Alexander A. Kropotin on 15.01.2021.
 //
 
-import Cocoa
+import Foundation
 
 protocol ShellScriptProtocol: class {
     
     init(source: String!);
     
-    func execute();
+    func execute() -> NSAppleEventDescriptor;
 }

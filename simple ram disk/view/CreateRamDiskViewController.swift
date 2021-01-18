@@ -29,8 +29,8 @@ class ViewController: NSViewController {
         let diskSpace = self.calculateDiskSpace(self.sizeInput.intValue ?? 1, self.sizeTypeBox.stringValue ?? "MB");
         print(diskSpace);
         
-        let result = self.shell("diskutil erasevolume JHFS+ 'RAM_Disk_512MB' `hdiutil attach -nomount ram://\(diskSpace)`");
-        print(result);
+        let script = ShellScript.init(source: "diskutil erasevolume JHFS+ 'RAM_Disk_512MB' `hdiutil attach -nomount ram://\(diskSpace)`");
+        script.execute();
     }
     
     private func calculateDiskSpace(_ size: Int32!, _ type: String!) -> Int32 {
@@ -43,39 +43,5 @@ class ViewController: NSViewController {
         
         return size * 2048;
     }
-    
-    private func shell(_ args: String!) -> String {
-        var outstr = ""
-        
-        let task = Process()
-        task.launchPath = "/usr/sbin/diskutil"
-        task.arguments = [args ?? "echo fuck"]
-        
-        print(task.arguments);
-        
-        let pipe = Pipe()
-        task.standardOutput = pipe
-        task.launch()
-        
-        let data = pipe.fileHandleForReading.readDataToEndOfFile()
-        if let output = String(data: data, encoding: .utf8) {
-            outstr = output as String
-        }
-        
-        task.waitUntilExit()
-        
-        return outstr
-    }
-    
-    @discardableResult
-    func shell2(_ args: String...) -> Int32 {
-        let task = Process()
-        task.launchPath = "/usr/bin/env"
-        task.arguments = args
-        task.launch()
-        task.waitUntilExit()
-        return task.terminationStatus
-    }
-
 }
 

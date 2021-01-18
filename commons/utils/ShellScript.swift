@@ -9,12 +9,17 @@ import Foundation
 
 public class ShellScript: ShellScriptProtocol {
     
-    private var source: String!;
+    private var script: String!;
     
     required public init(source: String!) {
-        self.source = source;
+        self.script = "do shell script \"\(source!)\" with administrator privileges";
     }
     
-    public func execute() {
+    public func execute() -> NSAppleEventDescriptor {
+        return self.getExecutable(script: self.script)?.executeAndReturnError(nil) ?? NSAppleEventDescriptor.init(boolean: true);
+    }
+    
+    private func getExecutable(script: String!) -> Optional<NSAppleScript> {
+        return NSAppleScript.init(source: script);
     }
 }
