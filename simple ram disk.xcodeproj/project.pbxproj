@@ -15,6 +15,7 @@
 		A3AC4B0625B1A8F3009CA485 /* ShellScriptProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC4B0525B1A8F3009CA485 /* ShellScriptProtocol.swift */; };
 		A3AC4B0925B1FCBD009CA485 /* ShellScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC4B0825B1FCBD009CA485 /* ShellScript.swift */; };
 		A3E38E2D25B074340009EC7E /* VolumeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E38E2C25B074340009EC7E /* VolumeDetail.swift */; };
+		A3E882FB25B7223B004FC169 /* VolumeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E882FA25B7223B004FC169 /* VolumeSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		A3AC4B0525B1A8F3009CA485 /* ShellScriptProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellScriptProtocol.swift; sourceTree = "<group>"; };
 		A3AC4B0825B1FCBD009CA485 /* ShellScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellScript.swift; sourceTree = "<group>"; };
 		A3E38E2C25B074340009EC7E /* VolumeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeDetail.swift; sourceTree = "<group>"; };
+		A3E882FA25B7223B004FC169 /* VolumeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				A3E38E2C25B074340009EC7E /* VolumeDetail.swift */,
+				A3E882FA25B7223B004FC169 /* VolumeSize.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				A3A38CB22573F892005AFA43 /* AppDelegate.swift in Sources */,
 				A3AC4B0625B1A8F3009CA485 /* ShellScriptProtocol.swift in Sources */,
 				A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */,
+				A3E882FB25B7223B004FC169 /* VolumeSize.swift in Sources */,
 				A3AC4B0925B1FCBD009CA485 /* ShellScript.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

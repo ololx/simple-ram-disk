@@ -4,6 +4,7 @@
 //
 //  Created by Alexander A. Kropotin on 14.01.2021.
 //
+import Foundation
 
 public struct VolumeDetail {
     
