@@ -8,7 +8,7 @@ import Foundation
 
 public struct VolumeDetail {
     
-    public static func of(name: String!, size: Int64!) -> VolumeDetail {
+    public static func of(name: String!, size: VolumeSize!) -> VolumeDetail {
         return VolumeDetail.init(name, size);
     }
     
@@ -20,10 +20,18 @@ public struct VolumeDetail {
     //
     // The volume size in messure
     //
-    private var size: Int64!
+    private var size: VolumeSize!
     
-    public init(_ name: String!, _ size: Int64!) {
+    public init(_ name: String!, _ size: VolumeSize!) {
         self.name = name;
         self.size = size;
+    }
+    
+    public func getName() -> String! {
+        return self.name!;
+    }
+    
+    public func getValue() -> VolumeSize! {
+        return self.size;
     }
 }

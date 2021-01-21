@@ -26,22 +26,15 @@ class ViewController: NSViewController {
     }
     
     @IBAction func createDisk(_ sender: Any) {
-        let diskName = "DISK1";
-        let diskSpace = self.calculateDiskSpace(self.sizeInput.intValue ?? 1, self.sizeTypeBox.stringValue ?? "MB");
-        
-        let script = ShellScript.init(source: "diskutil erasevolume JHFS+ '\(diskName)' `hdiutil attach -nomount ram://\(diskSpace)`");
+        let volume = VolumeDetail.of(
+            name: "TEST_DISK_1",
+            size: VolumeSize.init(
+                value: Int64(self.sizeInput.intValue),
+                measure: VolumeSize.Measurement.init(rawValue: self.sizeTypeBox.stringValue)!
+            )
+        );
+        let script = ShellScript.init(source: "diskutil erasevolume JHFS+ '\(volume.getName()!)' `hdiutil attach -nomount ram://\(2048 * volume.getValue()!.getValue(measure: VolumeSize.Measurement.MEGABYTE))`");
         print(script.execute());
-    }
-    
-    private func calculateDiskSpace(_ size: Int32!, _ type: String!) -> Int32 {
-        
-        if type == "B" {
-            return (size / 1024) * 2048;
-        } else if type == "GB" {
-            return (size * 1024) * 2048;
-        }
-        
-        return size * 2048;
     }
 }
 
