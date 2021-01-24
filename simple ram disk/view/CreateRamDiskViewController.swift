@@ -34,7 +34,10 @@ class ViewController: NSViewController {
             )
         );
         let script = ShellScript.init(source: "diskutil erasevolume JHFS+ '\(volume.getName()!)' `hdiutil attach -nomount ram://\(2048 * volume.getValue()!.getValue(measure: VolumeSize.Measurement.MEGABYTE))`");
-        print(script.execute());
+        
+        let res = ShScript.init(source: "./resources/create_ram_disk.sh").execute();
+        print(res)
+        //print(script.execute());
     }
 }
 

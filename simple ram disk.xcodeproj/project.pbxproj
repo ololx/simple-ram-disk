@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A347DBEF25BDA1680045A8B3 /* ShScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A347DBEE25BDA1680045A8B3 /* ShScript.swift */; };
 		A3A38CB22573F892005AFA43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB12573F892005AFA43 /* AppDelegate.swift */; };
 		A3A38CB42573F892005AFA43 /* CreateRamDiskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB32573F892005AFA43 /* CreateRamDiskViewController.swift */; };
 		A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB52573F892005AFA43 /* simple_ram_disk.xcdatamodeld */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A347DBEE25BDA1680045A8B3 /* ShScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShScript.swift; sourceTree = "<group>"; };
+		A347DBF225BDA1A50045A8B3 /* create_ram_disk.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = create_ram_disk.sh; sourceTree = "<group>"; };
 		A3A38CAE2573F892005AFA43 /* simple ram disk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple ram disk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A38CB12573F892005AFA43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3A38CB32573F892005AFA43 /* CreateRamDiskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRamDiskViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A347DBF125BDA1780045A8B3 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				A347DBF225BDA1A50045A8B3 /* create_ram_disk.sh */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		A3A38CA52573F892005AFA43 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +75,7 @@
 		A3A38CB02573F892005AFA43 /* simple ram disk */ = {
 			isa = PBXGroup;
 			children = (
+				A347DBF125BDA1780045A8B3 /* resources */,
 				A3AC4B0225B1A898009CA485 /* interactor */,
 				A3E38E2B25B073CD0009EC7E /* entity */,
 				A3E38E2A25B073640009EC7E /* route */,
@@ -96,6 +108,7 @@
 			children = (
 				A3AC4B0525B1A8F3009CA485 /* ShellScriptProtocol.swift */,
 				A3AC4B0825B1FCBD009CA485 /* ShellScript.swift */,
+				A347DBEE25BDA1680045A8B3 /* ShScript.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -196,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3E38E2D25B074340009EC7E /* VolumeDetail.swift in Sources */,
+				A347DBEF25BDA1680045A8B3 /* ShScript.swift in Sources */,
 				A3A38CB42573F892005AFA43 /* CreateRamDiskViewController.swift in Sources */,
 				A3A38CB22573F892005AFA43 /* AppDelegate.swift in Sources */,
 				A3AC4B0625B1A8F3009CA485 /* ShellScriptProtocol.swift in Sources */,
