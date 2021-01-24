@@ -714,7 +714,6 @@
                                 <rect key="frame" x="66" y="146" width="209" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Dwd-SQ-z8X">
-                                    <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="7zt-wN-bEE"/>
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -743,7 +742,7 @@
                                     </objectValues>
                                 </comboBoxCell>
                             </comboBox>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u4b-ED-Wfs" userLabel="Name Input">
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u4b-ED-Wfs" userLabel="Size Value Input">
                                 <rect key="frame" x="66" y="109" width="143" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="JUq-rf-RsF">
@@ -776,7 +775,8 @@
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="sizeInput" destination="1aF-PL-Qub" id="zu2-iV-xrq"/>
+                        <outlet property="nameInput" destination="1aF-PL-Qub" id="TII-j7-bUE"/>
+                        <outlet property="sizeInput" destination="u4b-ED-Wfs" id="RhC-1m-r6T"/>
                         <outlet property="sizeTypeBox" destination="65j-5R-dyC" id="hiG-7W-XVZ"/>
                     </connections>
                 </viewController>

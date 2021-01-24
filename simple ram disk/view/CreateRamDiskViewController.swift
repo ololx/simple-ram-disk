@@ -9,6 +9,8 @@ import Cocoa
 
 class ViewController: NSViewController {
     
+    @IBOutlet weak var nameInput: NSTextField!
+    
     @IBOutlet weak var sizeInput: NSTextField!
     
     @IBOutlet weak var sizeTypeBox: NSComboBox!
@@ -27,17 +29,15 @@ class ViewController: NSViewController {
     
     @IBAction func createDisk(_ sender: Any) {
         let volume = VolumeDetail.of(
-            name: "TEST_DISK_1",
+            name: self.nameInput.stringValue,
             size: VolumeSize.init(
                 value: Int64(self.sizeInput.intValue),
                 measure: VolumeSize.Measurement.init(rawValue: self.sizeTypeBox.stringValue)!
             )
         );
-        let script = ShellScript.init(source: "diskutil erasevolume JHFS+ '\(volume.getName()!)' `hdiutil attach -nomount ram://\(2048 * volume.getValue()!.getValue(measure: VolumeSize.Measurement.MEGABYTE))`");
         
-        let res = ShScript.init(source: "./resources/create_ram_disk.sh").execute();
+        let res = ShellScriptAdapter.init(args: ["./simple ram disk.app/Contents/Resources/resources/create_ram_disk.sh", volume.getName()!, String(volume.getValue()!.getValue(measure: VolumeSize.Measurement.MEGABYTE))]).execute();
         print(res)
-        //print(script.execute());
     }
 }
 
