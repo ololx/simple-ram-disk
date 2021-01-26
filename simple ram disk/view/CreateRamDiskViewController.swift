@@ -35,8 +35,10 @@ class ViewController: NSViewController {
                 measure: VolumeSize.Measurement.init(rawValue: self.sizeTypeBox.stringValue)!
             )
         );
-        
-        let res = ShellScriptAdapter.init(args: ["./simple ram disk.app/Contents/Resources/resources/create_ram_disk.sh", volume.getName()!, String(volume.getValue()!.getValue(measure: VolumeSize.Measurement.MEGABYTE))]).execute();
+        let sudo = ShellScriptAdapter.init(args: ["-s"]);
+        sudo.execute();
+        let res = ShellScriptAdapter.init(args: ["./simple ram disk.app/Contents/Resources/resources/create_ram_disk.sh", volume.getName()!, String(volume.getValue()!.getValue(measure: VolumeSize.Measurement.MEGABYTE))]).executeAndWait();
+        sudo.close();
         print(res)
     }
 }
