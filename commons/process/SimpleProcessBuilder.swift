@@ -27,13 +27,13 @@ public class SimpleProcessBuilder: ProcessBuilder {
     }
     
     public func with(with arguments: [String]!) -> ProcessBuilder {
-        self.process.arguments?.append(contentsOf: arguments);
+        self.process.arguments = arguments;
         
         return self;
     }
     
     public func with(with argument: String!) -> ProcessBuilder {
-        self.process.arguments?.append(argument);
+        self.process.arguments = [argument];
         
         return self;
     }

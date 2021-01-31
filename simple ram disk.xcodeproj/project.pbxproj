@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30AFBEB25C6CA9E00CFDEFB /* ProcessChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AFBEA25C6CA9E00CFDEFB /* ProcessChain.swift */; };
 		A347DBEF25BDA1680045A8B3 /* ShellScriptAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A347DBEE25BDA1680045A8B3 /* ShellScriptAdapter.swift */; };
 		A347DBF625BDA88E0045A8B3 /* resources in Resources */ = {isa = PBXBuildFile; fileRef = A347DBF525BDA88E0045A8B3 /* resources */; };
 		A36ABB2925C68F3500266F36 /* ProcessBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36ABB2825C68F3500266F36 /* ProcessBuilder.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A30AFBEA25C6CA9E00CFDEFB /* ProcessChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessChain.swift; sourceTree = "<group>"; };
 		A347DBEE25BDA1680045A8B3 /* ShellScriptAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellScriptAdapter.swift; sourceTree = "<group>"; };
 		A347DBF525BDA88E0045A8B3 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = resources; path = "simple ram disk/resources"; sourceTree = "<group>"; };
 		A36ABB2825C68F3500266F36 /* ProcessBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessBuilder.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				A36ABB2825C68F3500266F36 /* ProcessBuilder.swift */,
 				A36ABB2C25C6937800266F36 /* SimpleProcessBuilder.swift */,
+				A30AFBEA25C6CA9E00CFDEFB /* ProcessChain.swift */,
 			);
 			path = process;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				A36ABB2925C68F3500266F36 /* ProcessBuilder.swift in Sources */,
 				A36ABB2D25C6937800266F36 /* SimpleProcessBuilder.swift in Sources */,
 				A3AC4B0625B1A8F3009CA485 /* ShellScriptProtocol.swift in Sources */,
+				A30AFBEB25C6CA9E00CFDEFB /* ProcessChain.swift in Sources */,
 				A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */,
 				A3E882FB25B7223B004FC169 /* VolumeSize.swift in Sources */,
 				A3AC4B0925B1FCBD009CA485 /* ShellScript.swift in Sources */,
