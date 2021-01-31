@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ProcessBuilder: class {
+public protocol ProcessBuilder: class {
     
     init();
     
@@ -18,8 +18,6 @@ protocol ProcessBuilder: class {
     func with(with arguments: [String]!) -> ProcessBuilder;
     
     func with(with argument: String!) -> ProcessBuilder;
-    
-    func reset() -> ProcessBuilder;
     
     func build() -> Process;
 }
