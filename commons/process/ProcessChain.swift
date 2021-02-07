@@ -15,7 +15,7 @@ public class ProcessChain {
         self.chain = [];
     }
     
-    public func appemd(some process: Process!) -> ProcessChain {
+    public func append(some process: Process!) -> ProcessChain {
         self.chain.append(process);
         
         return self;

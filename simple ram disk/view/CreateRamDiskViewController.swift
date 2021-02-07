@@ -36,12 +36,13 @@ class ViewController: NSViewController {
             )
         );
         let executable = ProcessChain.init()
-            .appemd(some: SimpleProcessBuilder.init(at: "/bin/sh")
+            .append(some: SimpleProcessBuilder.init(at: "/bin/sh")
                         .with(with: "-s")
                         .build()
             )
-            .appemd(some: SimpleProcessBuilder.init(at: "/bin/sh")
-                        .with(with: ["./simple ram disk.app/Contents/Resources/resources/create_ram_disk.sh", volume.getName()!, String(volume.getValue()!.getValue(measure: VolumeSize.Measurement.MEGABYTE))])
+            .append(some: SimpleProcessBuilder.init(at: "/bin/sh")
+                        .with(with: "./simple ram disk.app/Contents/Resources/resources/create_ram_disk.sh")
+                        .with(with: [volume.getName()!, String(volume.getValue()!.getValue(measure: VolumeSize.Measurement.MEGABYTE))])
                         .build()
             );
         executable.execute();
