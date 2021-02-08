@@ -10,7 +10,7 @@ import Foundation
 public class ShellScriptAdapter {
     
     public enum Launches: String {
-        case SHELL = "/bin/sh"
+        case SH = "/bin/sh"
         case BASH = "/bin/bash"
     }
     

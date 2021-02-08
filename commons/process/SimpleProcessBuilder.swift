@@ -30,7 +30,7 @@ public class SimpleProcessBuilder: ProcessBuilder {
     }
     
     public func with(with arguments: [String]!) -> ProcessBuilder {
-        self.process.arguments?.append(contentsOf: arguments.map({self.prepare($0)}));
+        self.process.arguments?.append(contentsOf: arguments);
         
         return self;
     }
