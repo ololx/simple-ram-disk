@@ -21,10 +21,19 @@ public class ProcessChain {
         return self;
     }
     
-    public func execute() {
+    public func start() {
         for (process) in chain  {
             print(process.arguments)
             process.launch();
+        }
+    }
+    
+    public func stop() {
+        for (process) in chain  {
+            print(process.arguments)
+            if (!process.isRunning) {
+                process.interrupt();
+            }
         }
     }
 }

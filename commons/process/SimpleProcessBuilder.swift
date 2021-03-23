@@ -9,43 +9,40 @@ import Foundation
 
 public class SimpleProcessBuilder: ProcessBuilder {
     
-    private var process: Process!;
+    private var launchPath: String! = "";
+    
+    private var launchArguments: [String]! = [];
     
     public required init() {
-        self.process = Process.init();
-        self.process.launchPath = "";
-        self.process.arguments = [];
     }
     
     public required init(at laucnhPath: String!) {
-        self.process = Process.init();
-        self.process.launchPath = laucnhPath;
-        self.process.arguments = [];
+        self.at(at: laucnhPath);
     }
     
     public func at(at laucnhPath: String!) -> ProcessBuilder {
-        self.process.launchPath = laucnhPath;
+        self.launchPath = laucnhPath;
         
         return self;
     }
     
     public func with(with arguments: [String]!) -> ProcessBuilder {
-        self.process.arguments?.append(contentsOf: arguments);
+        self.launchArguments.append(contentsOf: arguments);
         
         return self;
     }
     
     public func with(with argument: String!) -> ProcessBuilder {
-        self.process.arguments?.append(argument);
+        self.launchArguments.append(argument);
         
         return self;
     }
     
     public func build() -> Process {
-        return self.process;
-    }
-    
-    private func prepare(_ input: String!) -> String! {
-        return input.replacingOccurrences(of: " ", with: "_");
+        let instance = Process.init();
+        instance.launchPath = self.launchPath;
+        instance.arguments = self.launchArguments;
+        
+        return instance;
     }
 }

@@ -46,8 +46,9 @@ class ViewController: NSViewController {
                         .with(with: [volume.getName()!, String(volume.getValue()!.getValue(measure: VolumeSize.Measurement.MEGABYTE))])
                         .build()
             );
-        executable.execute();
+        executable.start();
         print(true);
+        executable.stop();
     }
 }
 
