@@ -13,6 +13,10 @@
 		A36ABB2D25C6937800266F36 /* SimpleProcessBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36ABB2C25C6937800266F36 /* SimpleProcessBuilder.swift */; };
 		A39339E4260B161F0092A9B2 /* Sequencing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339E3260B161F0092A9B2 /* Sequencing.swift */; };
 		A39339E7260B17D50092A9B2 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339E6260B17D50092A9B2 /* Action.swift */; };
+		A39339EE260B1CA10092A9B2 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339ED260B1CA10092A9B2 /* ApplicationAssembly.swift */; };
+		A39339F1260B1D020092A9B2 /* SimpleRamDiskAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339F0260B1D020092A9B2 /* SimpleRamDiskAssembly.swift */; };
+		A39339F4260B23990092A9B2 /* RamDiskManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339F3260B23990092A9B2 /* RamDiskManagerProtocol.swift */; };
+		A39339F8260B242B0092A9B2 /* RamDiskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339F7260B242B0092A9B2 /* RamDiskManager.swift */; };
 		A3A38CB22573F892005AFA43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB12573F892005AFA43 /* AppDelegate.swift */; };
 		A3A38CB42573F892005AFA43 /* SimpleRamDiskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB32573F892005AFA43 /* SimpleRamDiskViewController.swift */; };
 		A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB52573F892005AFA43 /* simple_ram_disk.xcdatamodeld */; };
@@ -29,6 +33,10 @@
 		A36ABB2C25C6937800266F36 /* SimpleProcessBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProcessBuilder.swift; sourceTree = "<group>"; };
 		A39339E3260B161F0092A9B2 /* Sequencing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequencing.swift; sourceTree = "<group>"; };
 		A39339E6260B17D50092A9B2 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		A39339ED260B1CA10092A9B2 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		A39339F0260B1D020092A9B2 /* SimpleRamDiskAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRamDiskAssembly.swift; sourceTree = "<group>"; };
+		A39339F3260B23990092A9B2 /* RamDiskManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamDiskManagerProtocol.swift; sourceTree = "<group>"; };
+		A39339F7260B242B0092A9B2 /* RamDiskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamDiskManager.swift; sourceTree = "<group>"; };
 		A3A38CAE2573F892005AFA43 /* simple ram disk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple ram disk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A38CB12573F892005AFA43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3A38CB32573F892005AFA43 /* SimpleRamDiskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRamDiskViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +72,15 @@
 			path = process;
 			sourceTree = "<group>";
 		};
+		A39339EC260B1C6F0092A9B2 /* assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A39339ED260B1CA10092A9B2 /* ApplicationAssembly.swift */,
+				A39339F0260B1D020092A9B2 /* SimpleRamDiskAssembly.swift */,
+			);
+			path = assembly;
+			sourceTree = "<group>";
+		};
 		A3A38CA52573F892005AFA43 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +102,7 @@
 		A3A38CB02573F892005AFA43 /* simple ram disk */ = {
 			isa = PBXGroup;
 			children = (
+				A39339EC260B1C6F0092A9B2 /* assembly */,
 				A3AC4B0225B1A898009CA485 /* interactor */,
 				A3E38E2B25B073CD0009EC7E /* entity */,
 				A3E38E2A25B073640009EC7E /* route */,
@@ -100,6 +118,8 @@
 		A3AC4B0225B1A898009CA485 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A39339F3260B23990092A9B2 /* RamDiskManagerProtocol.swift */,
+				A39339F7260B242B0092A9B2 /* RamDiskManager.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -212,8 +232,12 @@
 				A3A38CB42573F892005AFA43 /* SimpleRamDiskViewController.swift in Sources */,
 				A3A38CB22573F892005AFA43 /* AppDelegate.swift in Sources */,
 				A39339E7260B17D50092A9B2 /* Action.swift in Sources */,
+				A39339EE260B1CA10092A9B2 /* ApplicationAssembly.swift in Sources */,
+				A39339F8260B242B0092A9B2 /* RamDiskManager.swift in Sources */,
 				A36ABB2925C68F3500266F36 /* ProcessBuilder.swift in Sources */,
 				A39339E4260B161F0092A9B2 /* Sequencing.swift in Sources */,
+				A39339F1260B1D020092A9B2 /* SimpleRamDiskAssembly.swift in Sources */,
+				A39339F4260B23990092A9B2 /* RamDiskManagerProtocol.swift in Sources */,
 				A36ABB2D25C6937800266F36 /* SimpleProcessBuilder.swift in Sources */,
 				A30AFBEB25C6CA9E00CFDEFB /* SimpleSequencing.swift in Sources */,
 				A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */,
