@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol RamDiskManagerProtocol: class {
+public protocol RamDiskManager: class {
     
     func create(_ volumeDetail: VolumeDetail!);
 }

@@ -7,7 +7,7 @@
 
 import Cocoa
 
-public class SimpleRamDiskAssembly: ApplicationAssembly {
+public class SimpleRamDiskAssemblyImpl: ApplicationAssembly {
     
     public func configure(with viewController: NSViewController) {
         //Create components

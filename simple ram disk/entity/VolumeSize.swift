@@ -35,7 +35,7 @@ public struct VolumeSize {
     //
     // The size origin value
     //
-    private var value: Int64!
+    private var value: Int32!
     
     //
     // The size origin measurement
@@ -46,22 +46,22 @@ public struct VolumeSize {
         self.init(byte: 0);
     }
     
-    public init(byte: Int64!) {
+    public init(byte: Int32!) {
         self.init(value: byte, measure: Measurement.BYTE);
     }
     
-    public init(value: Int64!, measure: Measurement) {
+    public init(value: Int32!, measure: Measurement) {
         self.value = value;
         self.measure = measure;
     }
     
-    public func getValue() -> Int64! {
+    public func getValue() -> Int32! {
         return self.value;
     }
     
-    public func getValue(measure: Measurement!) -> Int64! {
+    public func getValue(measure: Measurement!) -> Int32! {
         let diff = self.measure.order - measure.order;
-        let multiplier = (pow(1024, abs(diff)) as NSDecimalNumber).int64Value;
+        let multiplier = (pow(1024, abs(diff)) as NSDecimalNumber).int32Value;
         
         if (diff > 0) {
             return self.getValue() * multiplier;
@@ -70,5 +70,9 @@ public struct VolumeSize {
         } else {
             return self.getValue();
         }
+    }
+    
+    public func getMeasure() -> Measurement {
+        return self.measure;
     }
 }

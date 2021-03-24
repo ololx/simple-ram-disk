@@ -7,18 +7,28 @@
 
 import Cocoa
 
-class SimpleRamDiskViewController: NSViewController {
+class SimpleRamDiskControllerImpl: NSViewController {
     
     @IBOutlet weak var nameInput: NSTextField!
     
     @IBOutlet weak var sizeInput: NSTextField!
     
-    @IBOutlet weak var sizeTypeBox: NSComboBox!
+    @IBOutlet weak var measureNameBox: NSComboBox!
+    
+    //The view configurator
+    let configurator: SimpleRamDiskAssembly = SimpleRamDiskAssemblyImpl.init();
+    
+    //The service instance
+    var simpleRamDiskService: SimpleRamDiskService!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //Configure view
+        configurator.configure(with: self)
+        
+        //Setup form initional values
+        simpleRamDiskService.load()
     }
 
     override var representedObject: Any? {
@@ -31,8 +41,8 @@ class SimpleRamDiskViewController: NSViewController {
         let volume = VolumeDetail.of(
             name: self.nameInput.stringValue,
             size: VolumeSize.init(
-                value: Int64(self.sizeInput.intValue),
-                measure: VolumeSize.Measurement.init(rawValue: self.sizeTypeBox.stringValue)!
+                value: self.sizeInput.intValue,
+                measure: VolumeSize.Measurement.init(rawValue: self.measureNameBox.stringValue)!
             )
         );
         SimpleSequencing.init()
@@ -50,7 +60,6 @@ class SimpleRamDiskViewController: NSViewController {
                 actionType: Action.Method.LAUNCH_AND_WAIT
             )
             .execute();
-        print(true);
     }
 }
 

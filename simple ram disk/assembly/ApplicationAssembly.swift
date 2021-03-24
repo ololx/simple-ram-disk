@@ -5,9 +5,9 @@
 //  Created by Alexander A. Kropotin on 24.03.2021.
 //
 
-import Cocoa
+import Foundation
 
-public protocol ApplicationAssembly: class {
+protocol SimpleRamDiskAssembly: class {
     
-    func configure(with viewController: NSViewController)
+    func configure(with viewController: SimpleRamDiskControllerImpl!)
 }
