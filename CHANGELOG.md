@@ -14,4 +14,4 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## [1.0.0] - 2021-03-26
 
 ### Added
-- Initial public release of the simple tool which allow to create a ram disk.
+- Initial public release of the simple tool which allows to create a ram disk.
