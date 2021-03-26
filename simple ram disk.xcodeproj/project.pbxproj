@@ -11,6 +11,7 @@
 		A347DBF625BDA88E0045A8B3 /* resources in Resources */ = {isa = PBXBuildFile; fileRef = A347DBF525BDA88E0045A8B3 /* resources */; };
 		A36ABB2925C68F3500266F36 /* ProcessBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36ABB2825C68F3500266F36 /* ProcessBuilder.swift */; };
 		A36ABB2D25C6937800266F36 /* SimpleProcessBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36ABB2C25C6937800266F36 /* SimpleProcessBuilder.swift */; };
+		A36B149D260E2CC00098B07A /* SimpleRamDiskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B149C260E2CC00098B07A /* SimpleRamDiskController.swift */; };
 		A39339E4260B161F0092A9B2 /* Sequencing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339E3260B161F0092A9B2 /* Sequencing.swift */; };
 		A39339E7260B17D50092A9B2 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339E6260B17D50092A9B2 /* Action.swift */; };
 		A39339EE260B1CA10092A9B2 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339ED260B1CA10092A9B2 /* ApplicationAssembly.swift */; };
@@ -33,6 +34,7 @@
 		A347DBF525BDA88E0045A8B3 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = resources; path = "simple ram disk/resources"; sourceTree = "<group>"; };
 		A36ABB2825C68F3500266F36 /* ProcessBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessBuilder.swift; sourceTree = "<group>"; };
 		A36ABB2C25C6937800266F36 /* SimpleProcessBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProcessBuilder.swift; sourceTree = "<group>"; };
+		A36B149C260E2CC00098B07A /* SimpleRamDiskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRamDiskController.swift; sourceTree = "<group>"; };
 		A39339E3260B161F0092A9B2 /* Sequencing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequencing.swift; sourceTree = "<group>"; };
 		A39339E6260B17D50092A9B2 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		A39339ED260B1CA10092A9B2 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				A3A38CBA2573F893005AFA43 /* Main.storyboard */,
 				A3A38CB32573F892005AFA43 /* SimpleRamDiskControllerImpl.swift */,
+				A36B149C260E2CC00098B07A /* SimpleRamDiskController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				A39339F1260B1D020092A9B2 /* SimpleRamDiskAssemblyImpl.swift in Sources */,
 				A39339F4260B23990092A9B2 /* RamDiskManager.swift in Sources */,
 				A36ABB2D25C6937800266F36 /* SimpleProcessBuilder.swift in Sources */,
+				A36B149D260E2CC00098B07A /* SimpleRamDiskController.swift in Sources */,
 				A30AFBEB25C6CA9E00CFDEFB /* SimpleSequencing.swift in Sources */,
 				A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */,
 				A3E882FB25B7223B004FC169 /* VolumeSize.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import Cocoa
 
-class SimpleRamDiskControllerImpl: NSViewController {
+class SimpleRamDiskControllerImpl: NSViewController, SimpleRamDiskController {
     
     @IBOutlet weak var nameInput: NSTextField!
     
@@ -41,4 +41,3 @@ class SimpleRamDiskControllerImpl: NSViewController {
         self.simpleRamDiskService.createRamDisk();
     }
 }
-
