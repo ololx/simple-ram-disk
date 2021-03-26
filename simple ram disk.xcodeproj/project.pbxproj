@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A30AFBEB25C6CA9E00CFDEFB /* SimpleSequencing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AFBEA25C6CA9E00CFDEFB /* SimpleSequencing.swift */; };
+		A347DBF625BDA88E0045A8B3 /* resources in Resources */ = {isa = PBXBuildFile; fileRef = A347DBF525BDA88E0045A8B3 /* resources */; };
+		A36ABB2925C68F3500266F36 /* ProcessBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36ABB2825C68F3500266F36 /* ProcessBuilder.swift */; };
+		A36ABB2D25C6937800266F36 /* SimpleProcessBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36ABB2C25C6937800266F36 /* SimpleProcessBuilder.swift */; };
+		A36B149D260E2CC00098B07A /* SimpleRamDiskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B149C260E2CC00098B07A /* SimpleRamDiskController.swift */; };
+		A39339E4260B161F0092A9B2 /* Sequencing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339E3260B161F0092A9B2 /* Sequencing.swift */; };
+		A39339E7260B17D50092A9B2 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339E6260B17D50092A9B2 /* Action.swift */; };
+		A39339EE260B1CA10092A9B2 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339ED260B1CA10092A9B2 /* ApplicationAssembly.swift */; };
+		A39339F1260B1D020092A9B2 /* SimpleRamDiskAssemblyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339F0260B1D020092A9B2 /* SimpleRamDiskAssemblyImpl.swift */; };
+		A39339F4260B23990092A9B2 /* RamDiskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339F3260B23990092A9B2 /* RamDiskManager.swift */; };
+		A39339F8260B242B0092A9B2 /* RamDiskManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339F7260B242B0092A9B2 /* RamDiskManagerImpl.swift */; };
+		A39339FC260B77600092A9B2 /* SimpleRamDiskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339FB260B77600092A9B2 /* SimpleRamDiskService.swift */; };
+		A3933A00260B78010092A9B2 /* SimpleRamDiskServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39339FF260B78010092A9B2 /* SimpleRamDiskServiceImpl.swift */; };
+		A3A38CB22573F892005AFA43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB12573F892005AFA43 /* AppDelegate.swift */; };
+		A3A38CB42573F892005AFA43 /* SimpleRamDiskControllerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB32573F892005AFA43 /* SimpleRamDiskControllerImpl.swift */; };
+		A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3A38CB52573F892005AFA43 /* simple_ram_disk.xcdatamodeld */; };
+		A3A38CB92573F893005AFA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A38CB82573F893005AFA43 /* Assets.xcassets */; };
+		A3A38CBC2573F893005AFA43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A38CBA2573F893005AFA43 /* Main.storyboard */; };
+		A3E38E2D25B074340009EC7E /* VolumeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E38E2C25B074340009EC7E /* VolumeDetail.swift */; };
+		A3E882FB25B7223B004FC169 /* VolumeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E882FA25B7223B004FC169 /* VolumeSize.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A30AFBEA25C6CA9E00CFDEFB /* SimpleSequencing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSequencing.swift; sourceTree = "<group>"; };
+		A347DBF525BDA88E0045A8B3 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = resources; path = "simple ram disk/resources"; sourceTree = "<group>"; };
+		A36ABB2825C68F3500266F36 /* ProcessBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessBuilder.swift; sourceTree = "<group>"; };
+		A36ABB2C25C6937800266F36 /* SimpleProcessBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProcessBuilder.swift; sourceTree = "<group>"; };
+		A36B149C260E2CC00098B07A /* SimpleRamDiskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRamDiskController.swift; sourceTree = "<group>"; };
+		A39339E3260B161F0092A9B2 /* Sequencing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequencing.swift; sourceTree = "<group>"; };
+		A39339E6260B17D50092A9B2 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		A39339ED260B1CA10092A9B2 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		A39339F0260B1D020092A9B2 /* SimpleRamDiskAssemblyImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRamDiskAssemblyImpl.swift; sourceTree = "<group>"; };
+		A39339F3260B23990092A9B2 /* RamDiskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamDiskManager.swift; sourceTree = "<group>"; };
+		A39339F7260B242B0092A9B2 /* RamDiskManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamDiskManagerImpl.swift; sourceTree = "<group>"; };
+		A39339FB260B77600092A9B2 /* SimpleRamDiskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRamDiskService.swift; sourceTree = "<group>"; };
+		A39339FF260B78010092A9B2 /* SimpleRamDiskServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRamDiskServiceImpl.swift; sourceTree = "<group>"; };
+		A3A38CAE2573F892005AFA43 /* simple ram disk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple ram disk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A38CB12573F892005AFA43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3A38CB32573F892005AFA43 /* SimpleRamDiskControllerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRamDiskControllerImpl.swift; sourceTree = "<group>"; };
+		A3A38CB62573F892005AFA43 /* simple_ram_disk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = simple_ram_disk.xcdatamodel; sourceTree = "<group>"; };
+		A3A38CB82573F893005AFA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3A38CBB2573F893005AFA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3A38CBD2573F893005AFA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A38CBE2573F893005AFA43 /* simple_ram_disk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = simple_ram_disk.entitlements; sourceTree = "<group>"; };
+		A3E38E2C25B074340009EC7E /* VolumeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeDetail.swift; sourceTree = "<group>"; };
+		A3E882FA25B7223B004FC169 /* VolumeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSize.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3A38CAB2573F892005AFA43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A36ABB2725C68E6200266F36 /* process */ = {
+			isa = PBXGroup;
+			children = (
+				A36ABB2825C68F3500266F36 /* ProcessBuilder.swift */,
+				A36ABB2C25C6937800266F36 /* SimpleProcessBuilder.swift */,
+				A30AFBEA25C6CA9E00CFDEFB /* SimpleSequencing.swift */,
+				A39339E3260B161F0092A9B2 /* Sequencing.swift */,
+				A39339E6260B17D50092A9B2 /* Action.swift */,
+			);
+			path = process;
+			sourceTree = "<group>";
+		};
+		A39339EC260B1C6F0092A9B2 /* assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A39339ED260B1CA10092A9B2 /* ApplicationAssembly.swift */,
+				A39339F0260B1D020092A9B2 /* SimpleRamDiskAssemblyImpl.swift */,
+			);
+			path = assembly;
+			sourceTree = "<group>";
+		};
+		A39339FA260B76460092A9B2 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A39339FB260B77600092A9B2 /* SimpleRamDiskService.swift */,
+				A39339FF260B78010092A9B2 /* SimpleRamDiskServiceImpl.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		A3A38CA52573F892005AFA43 = {
+			isa = PBXGroup;
+			children = (
+				A347DBF525BDA88E0045A8B3 /* resources */,
+				A3AC4B0325B1A8BA009CA485 /* commons */,
+				A3A38CB02573F892005AFA43 /* simple ram disk */,
+				A3A38CAF2573F892005AFA43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3A38CAF2573F892005AFA43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3A38CAE2573F892005AFA43 /* simple ram disk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3A38CB02573F892005AFA43 /* simple ram disk */ = {
+			isa = PBXGroup;
+			children = (
+				A39339FA260B76460092A9B2 /* presenter */,
+				A39339EC260B1C6F0092A9B2 /* assembly */,
+				A3AC4B0225B1A898009CA485 /* interactor */,
+				A3E38E2B25B073CD0009EC7E /* entity */,
+				A3E38E2A25B073640009EC7E /* route */,
+				A3E38E2725B05DE40009EC7E /* view */,
+				A3A38CB82573F893005AFA43 /* Assets.xcassets */,
+				A3A38CBD2573F893005AFA43 /* Info.plist */,
+				A3A38CBE2573F893005AFA43 /* simple_ram_disk.entitlements */,
+				A3A38CB52573F892005AFA43 /* simple_ram_disk.xcdatamodeld */,
+			);
+			path = "simple ram disk";
+			sourceTree = "<group>";
+		};
+		A3AC4B0225B1A898009CA485 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A39339F3260B23990092A9B2 /* RamDiskManager.swift */,
+				A39339F7260B242B0092A9B2 /* RamDiskManagerImpl.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		A3AC4B0325B1A8BA009CA485 /* commons */ = {
+			isa = PBXGroup;
+			children = (
+				A36ABB2725C68E6200266F36 /* process */,
+			);
+			path = commons;
+			sourceTree = "<group>";
+		};
+		A3E38E2725B05DE40009EC7E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A3A38CBA2573F893005AFA43 /* Main.storyboard */,
+				A3A38CB32573F892005AFA43 /* SimpleRamDiskControllerImpl.swift */,
+				A36B149C260E2CC00098B07A /* SimpleRamDiskController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A3E38E2A25B073640009EC7E /* route */ = {
+			isa = PBXGroup;
+			children = (
+				A3A38CB12573F892005AFA43 /* AppDelegate.swift */,
+			);
+			path = route;
+			sourceTree = "<group>";
+		};
+		A3E38E2B25B073CD0009EC7E /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				A3E38E2C25B074340009EC7E /* VolumeDetail.swift */,
+				A3E882FA25B7223B004FC169 /* VolumeSize.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3A38CAD2573F892005AFA43 /* simple ram disk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A38CC12573F893005AFA43 /* Build configuration list for PBXNativeTarget "simple ram disk" */;
+			buildPhases = (
+				A3A38CAA2573F892005AFA43 /* Sources */,
+				A3A38CAB2573F892005AFA43 /* Frameworks */,
+				A3A38CAC2573F892005AFA43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "simple ram disk";
+			productName = "simple ram disk";
+			productReference = A3A38CAE2573F892005AFA43 /* simple ram disk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3A38CA62573F892005AFA43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					A3A38CAD2573F892005AFA43 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = A3A38CA92573F892005AFA43 /* Build configuration list for PBXProject "simple ram disk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3A38CA52573F892005AFA43;
+			productRefGroup = A3A38CAF2573F892005AFA43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3A38CAD2573F892005AFA43 /* simple ram disk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3A38CAC2573F892005AFA43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A38CB92573F893005AFA43 /* Assets.xcassets in Resources */,
+				A347DBF625BDA88E0045A8B3 /* resources in Resources */,
+				A3A38CBC2573F893005AFA43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3A38CAA2573F892005AFA43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E38E2D25B074340009EC7E /* VolumeDetail.swift in Sources */,
+				A3933A00260B78010092A9B2 /* SimpleRamDiskServiceImpl.swift in Sources */,
+				A3A38CB42573F892005AFA43 /* SimpleRamDiskControllerImpl.swift in Sources */,
+				A3A38CB22573F892005AFA43 /* AppDelegate.swift in Sources */,
+				A39339FC260B77600092A9B2 /* SimpleRamDiskService.swift in Sources */,
+				A39339E7260B17D50092A9B2 /* Action.swift in Sources */,
+				A39339EE260B1CA10092A9B2 /* ApplicationAssembly.swift in Sources */,
+				A39339F8260B242B0092A9B2 /* RamDiskManagerImpl.swift in Sources */,
+				A36ABB2925C68F3500266F36 /* ProcessBuilder.swift in Sources */,
+				A39339E4260B161F0092A9B2 /* Sequencing.swift in Sources */,
+				A39339F1260B1D020092A9B2 /* SimpleRamDiskAssemblyImpl.swift in Sources */,
+				A39339F4260B23990092A9B2 /* RamDiskManager.swift in Sources */,
+				A36ABB2D25C6937800266F36 /* SimpleProcessBuilder.swift in Sources */,
+				A36B149D260E2CC00098B07A /* SimpleRamDiskController.swift in Sources */,
+				A30AFBEB25C6CA9E00CFDEFB /* SimpleSequencing.swift in Sources */,
+				A3A38CB72573F892005AFA43 /* simple_ram_disk.xcdatamodeld in Sources */,
+				A3E882FB25B7223B004FC169 /* VolumeSize.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3A38CBA2573F893005AFA43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3A38CBB2573F893005AFA43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3A38CBF2573F893005AFA43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3A38CC02573F893005AFA43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A3A38CC22573F893005AFA43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "simple ram disk/simple_ram_disk.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C84A399767;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "simple ram disk/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ololx.simple-ram-disk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A3A38CC32573F893005AFA43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "simple ram disk/simple_ram_disk.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C84A399767;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "simple ram disk/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ololx.simple-ram-disk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3A38CA92573F892005AFA43 /* Build configuration list for PBXProject "simple ram disk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A38CBF2573F893005AFA43 /* Debug */,
+				A3A38CC02573F893005AFA43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A38CC12573F893005AFA43 /* Build configuration list for PBXNativeTarget "simple ram disk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A38CC22573F893005AFA43 /* Debug */,
+				A3A38CC32573F893005AFA43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A3A38CB52573F892005AFA43 /* simple_ram_disk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A3A38CB62573F892005AFA43 /* simple_ram_disk.xcdatamodel */,
+			);
+			currentVersion = A3A38CB62573F892005AFA43 /* simple_ram_disk.xcdatamodel */;
+			path = simple_ram_disk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A3A38CA62573F892005AFA43 /* Project object */;
+}
